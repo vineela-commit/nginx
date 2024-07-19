@@ -1,0 +1,10 @@
+---
+# install nginx on ubuntu
+- name: run apt-get on the server
+  apt:
+    update_cache: yes
+
+- name: Install {{ nginx_package }}
+  apt: 
+    name:{{nginx_package}} 
+    state:present
