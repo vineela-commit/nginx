@@ -1,6 +1,6 @@
 ---
 # handlers file for nginx
-- name: restart {{nginx_package}}
+- name: restart nginx
   service:
-    name:{{nginx_package}}
-    start:restart
+    name: nginx
+    state: restarted
