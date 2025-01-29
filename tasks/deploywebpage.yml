@@ -1,5 +1,5 @@
 # deploy webpage on nginx
-- name: deploy webpage on {{nginx_package}} 
+- name: deploy webpage on nginx
   template:
     src: templates/index.html.j2
     dest: /var/www/html/index.html

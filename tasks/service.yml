@@ -1,5 +1,5 @@
 ---
-- name: start {{nginx_package}}
+- name: start nginx
   service:
-    name:{{nginx_package}}
-    state:started
+    name: nginx
+    state: started
